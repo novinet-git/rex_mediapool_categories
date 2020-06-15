@@ -11,7 +11,7 @@ if (rex_post('formsubmit', 'string') == '1' && !$csrfToken->isValid()) {
     $bError = false;
 
 
-    foreach($_POST[name] AS $iId => $sName) {
+    foreach($_POST['name'] AS $iId => $sName) {
         if (!$sName) {
             $bError = true;
         }
@@ -19,10 +19,10 @@ if (rex_post('formsubmit', 'string') == '1' && !$csrfToken->isValid()) {
 
 
     if (!$bError) {
-        foreach($_POST[name] AS $iId => $sName) {
+        foreach($_POST['name'] AS $iId => $sName) {
             $aData = array(
-                name => $sName,
-                parent_id => $_POST["parent"][$iId],
+                'name' => $sName,
+                'parent_id' => $_POST["parent"][$iId],
             );
             $oCategories->updateCategory($iId,$aData);
         }
