@@ -2,10 +2,10 @@
 Addon zur Umbenennung und Umsortierung von Medienpool-Kategorien.
 
 ### Version
-0.2-beta
+1.0
 
 ### Stand
-24.12.2018
+11.01.2023
 
 ### Autor
 Daniel Steffen
